@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mygallery {
+    margin-top: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: rgb(49, 47, 47);
+}
+
+#wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.cointner {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+    width: 32%;
+    height: 24rem;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+
+img {
+    width: 100%;
+    box-shadow: 0 0 20px #333;
+height: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.06);
+    transition: 1s ease-in-out;
+    filter: drop-shadow( 0  0 10px #333);
+
+}
+
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    height: 20%;
+    font-size: 16px;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    transition: 03s;
+    font-weight: 500;
+    color: white;
+
+}
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
