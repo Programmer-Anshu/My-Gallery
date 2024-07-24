@@ -11,9 +11,9 @@ body {
 }
 
 .mygallery {
-    margin-top: 40px;
+    margin-top: 30px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   color: rgb(49, 47, 47);
 }
 
@@ -38,7 +38,6 @@ body {
 
 .card {
     width: 32%;
-    height: 24rem;
     position: relative;
     margin-bottom: 20px;
     border-radius: 8px;
